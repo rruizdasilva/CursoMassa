@@ -44,7 +44,7 @@ public class GeradorMassas {
         Faker faker = new Faker();
         ContaService service = new ContaService();
         UsuarioService userService = new UsuarioService();
-        Usuario usuarioGlobal = new Usuario(faker.name().fullName() + "US", faker.internet().emailAddress(), faker.internet().password());
+        Usuario usuarioGlobal = new Usuario(faker.name().fullName(), faker.internet().emailAddress(), faker.internet().password());
         Usuario usuarioSalvo = userService.salvar(usuarioGlobal);
         Conta conta = new Conta(faker.superhero().name(), usuarioSalvo);
         service.salvar(conta);
