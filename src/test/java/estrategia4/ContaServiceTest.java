@@ -41,7 +41,7 @@ public class ContaServiceTest {
     @Test
     public void testAlterar() throws Exception {
         ConnectionFactory.getConnection().createStatement().executeUpdate(
-                "INSERT INTO contass (id, nome, usuario, id) VALUES (1, 'Conta para testes', 1)");
+                "INSERT INTO contas (id, nome, usuario, id) VALUES (1, 'Conta para testes', 1)");
         Conta contaTeste = service.findByName("Conta para testes");
         contaTeste.setNome("Conta alterada");
         service.printAll();
