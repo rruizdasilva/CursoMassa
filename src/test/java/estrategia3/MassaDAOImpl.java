@@ -18,9 +18,10 @@ public class MassaDAOImpl {
     }
 
     public String obterMassa(String tipo) throws SQLException, ClassNotFoundException {
-        PreparedStatement stmt = ConnectionFactory.getConnection().prepareStatement(
-                "WITH M AS (SELECT id, valor FROM massas WHERE tipo = ? AND usada = false ORDER BY id LIMIT 1) " +
-                        "UPDATE MASSAS M2 SET usada = true FROM M WHERE M.ID = M2.ID RETURNING M ");
+        String sql = "WITH M AS (SELECT id, valor FROM massas WHERE tipo = ? AND usada = false ORDER BY id LIMIT 1) " +
+                "UPDATE MASSAS M2 SET usada = true FROM M WHERE M.ID = M2.ID RETURNING M.VALOR";
+        String sql1 = "SELECT id, valor FROM massas where tipo = ? AND usada = false ORDER BY id LIMIT 1";
+        PreparedStatement stmt = ConnectionFactory.getConnection().prepareStatement(sql);
         stmt.setString(1, tipo);
         ResultSet rs = stmt.executeQuery();
         if(!rs.next()) return null;

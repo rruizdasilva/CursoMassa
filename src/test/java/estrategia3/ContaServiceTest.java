@@ -14,7 +14,7 @@ public class ContaServiceTest {
     ContaService service = new ContaService();
     UsuarioService userService = new UsuarioService();
 
-    //@Test
+    @Test
     public void testInserir() throws Exception {
         Usuario usuario = new Usuario(faker.name().fullName(), faker.internet().emailAddress(), faker.internet().password());
         usuario = userService.salvar(usuario);
@@ -25,7 +25,7 @@ public class ContaServiceTest {
         service.printAll();
     }
 
-    //@Test
+    @Test
     public void testAlterar() throws Exception {
         Conta contaTeste = service.findByName(new MassaDAOImpl().obterMassa(GeradorMassas.CHAVE_CONTA));
         String novoNome = faker.ancient().god() + " " + faker.ancient().titan();
@@ -35,7 +35,7 @@ public class ContaServiceTest {
         service.printAll();
     }
 
-    //@Test
+    @Test
     public void testConsultar() throws Exception {
         String nomeConta = new MassaDAOImpl().obterMassa(GeradorMassas.CHAVE_CONTA);
         Conta contaTeste = service.findByName(nomeConta);

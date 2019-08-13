@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb419be5-6d5c-4126-b198-627f8458d55f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/estrategia4/ContaServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/estrategia3/ContaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/estrategia3/ContaServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/estrategia3/GeradorMassas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/estrategia3/GeradorMassas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/estrategia3/ContaServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/estrategia3/ContaServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/estrategia3/GeradorMassas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/estrategia3/GeradorMassas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/estrategia3/MassaDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/estrategia3/MassaDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/estrategia3/MassaDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/estrategia3/MassaDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/estrategia4/ContaServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/estrategia4/ContaServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ContaServiceTest #4">
+  <component name="RunManager" selected="JUnit.ContaServiceTest #3">
     <configuration name="EstoqueBatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="estrategia3.EstoqueBatch" />
       <module name="cursoMassa" />
@@ -165,10 +163,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContaServiceTest #4" />
         <item itemvalue="JUnit.ContaServiceTest #3" />
-        <item itemvalue="JUnit.ContaServiceTest #2" />
         <item itemvalue="Application.GeradorMassas" />
+        <item itemvalue="JUnit.ContaServiceTest #4" />
+        <item itemvalue="JUnit.ContaServiceTest #2" />
         <item itemvalue="Application.EstoqueBatch" />
       </list>
     </recent_temporary>
@@ -190,7 +188,7 @@
       <workItem from="1564486615002" duration="3398000" />
       <workItem from="1564573246295" duration="3097000" />
       <workItem from="1564584424376" duration="23000" />
-      <workItem from="1565558972633" duration="7811000" />
+      <workItem from="1565558972633" duration="11819000" />
     </task>
     <servers />
   </component>
@@ -209,17 +207,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/ce/wcaquino/dao/impl/ContaDAOImpl.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
