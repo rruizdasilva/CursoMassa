@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb419be5-6d5c-4126-b198-627f8458d55f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/estrategia5/ContaServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dbunit_dbunit_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__postgresql_postgresql_8_4_701_jdbc3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dbunit/ImportExport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cursoMassa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cursoMassa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,13 +89,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ContaServiceTest">
+  <component name="RunManager" selected="Application.ImportExport">
     <configuration name="GeradorMassas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="estrategia3.GeradorMassas" />
       <module name="cursoMassa" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="estrategia3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImportExport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dbunit.ImportExport" />
+      <module name="cursoMassa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dbunit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,23 +126,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="estrategia3" />
       <option name="MAIN_CLASS_NAME" value="estrategia3.ContaServiceTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContaServiceTest #4" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="cursoMassa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="estrategia4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="estrategia4" />
-      <option name="MAIN_CLASS_NAME" value="estrategia4.ContaServiceTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />
@@ -158,17 +168,17 @@
     <list>
       <item itemvalue="Application.GeradorMassas" />
       <item itemvalue="JUnit.ContaServiceTest #3" />
-      <item itemvalue="JUnit.ContaServiceTest #4" />
       <item itemvalue="JUnit.ContaTesteWeb #5" />
       <item itemvalue="JUnit.ContaServiceTest" />
+      <item itemvalue="Application.ImportExport" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ImportExport" />
         <item itemvalue="JUnit.ContaServiceTest" />
         <item itemvalue="JUnit.ContaTesteWeb #5" />
         <item itemvalue="JUnit.ContaServiceTest #3" />
         <item itemvalue="Application.GeradorMassas" />
-        <item itemvalue="JUnit.ContaServiceTest #4" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +200,7 @@
       <workItem from="1564573246295" duration="3097000" />
       <workItem from="1564584424376" duration="23000" />
       <workItem from="1565558972633" duration="14125000" />
-      <workItem from="1565782435047" duration="2669000" />
+      <workItem from="1565782435047" duration="3967000" />
     </task>
     <servers />
   </component>
