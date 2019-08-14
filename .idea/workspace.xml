@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb419be5-6d5c-4126-b198-627f8458d55f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/estrategia5/ContaTesteWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,6 +57,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="estrategia5" />
       <recent name="estrategia4" />
       <recent name="estrategia3" />
       <recent name="estrategia2" />
@@ -73,20 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ContaServiceTest #3">
-    <configuration name="EstoqueBatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="estrategia3.EstoqueBatch" />
-      <module name="cursoMassa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="estrategia3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ContaTesteWeb #5">
     <configuration name="GeradorMassas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="estrategia3.GeradorMassas" />
       <module name="cursoMassa" />
@@ -151,20 +140,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ContaTesteWeb #5" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="cursoMassa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="estrategia5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="estrategia5" />
+      <option name="MAIN_CLASS_NAME" value="estrategia5.ContaTesteWeb" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.GeradorMassas" />
-      <item itemvalue="Application.EstoqueBatch" />
       <item itemvalue="JUnit.ContaServiceTest #2" />
       <item itemvalue="JUnit.ContaServiceTest #3" />
       <item itemvalue="JUnit.ContaServiceTest #4" />
+      <item itemvalue="JUnit.ContaTesteWeb #5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContaTesteWeb #5" />
         <item itemvalue="JUnit.ContaServiceTest #3" />
         <item itemvalue="Application.GeradorMassas" />
         <item itemvalue="JUnit.ContaServiceTest #4" />
         <item itemvalue="JUnit.ContaServiceTest #2" />
-        <item itemvalue="Application.EstoqueBatch" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +191,8 @@
       <workItem from="1564486615002" duration="3398000" />
       <workItem from="1564573246295" duration="3097000" />
       <workItem from="1564584424376" duration="23000" />
-      <workItem from="1565558972633" duration="13499000" />
+      <workItem from="1565558972633" duration="14125000" />
+      <workItem from="1565782435047" duration="1019000" />
     </task>
     <servers />
   </component>
