@@ -1,33 +1,20 @@
 package estrategia5;
 
-import com.github.javafaker.Faker;
-import org.junit.*;
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.sql.SQLException;
 import java.util.concurrent.TimeUnit;
 
 public class ContaTesteWeb {
-    private WebDriver driver;
+    private static ChromeDriver driver;
 
     @BeforeClass
     public static void reset(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\Selenium\\chromedriver.exe");
-        WebDriver driverLogin = new ChromeDriver();
-        driverLogin.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driverLogin.manage().window().maximize();
-        driverLogin.get("http://seubarriga.wcaquino.me/login");
-        driverLogin.findElement(By.id("email")).sendKeys("roger@roger.com");
-        driverLogin.findElement(By.id("senha")).sendKeys("12345");
-        driverLogin.findElement(By.tagName("button")).click();
-        driverLogin.findElement(By.linkText("reset")).click();
-        driverLogin.quit();
-    }
-
-    @Before
-    public void login() {
         System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\Selenium\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -36,6 +23,7 @@ public class ContaTesteWeb {
         driver.findElement(By.id("email")).sendKeys("roger@roger.com");
         driver.findElement(By.id("senha")).sendKeys("12345");
         driver.findElement(By.tagName("button")).click();
+        driver.findElement(By.linkText("reset")).click();
     }
 
     @Test
@@ -77,8 +65,8 @@ public class ContaTesteWeb {
         Assert.assertEquals("Conta removida com sucesso!", msg);
     }
 
-    @After
-    public void fechar(){
+    @AfterClass
+    public static void fechar(){
         driver.quit();
     }
 }

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb419be5-6d5c-4126-b198-627f8458d55f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/estrategia5/ContaTesteWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/estrategia5/ContaTesteWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/estrategia5/ContaTesteWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/estrategia5/ContaTesteWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/estrategia5/ContaTesteWeb.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +193,7 @@
       <workItem from="1564573246295" duration="3097000" />
       <workItem from="1564584424376" duration="23000" />
       <workItem from="1565558972633" duration="14125000" />
-      <workItem from="1565782435047" duration="1019000" />
+      <workItem from="1565782435047" duration="1920000" />
     </task>
     <servers />
   </component>
