@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb419be5-6d5c-4126-b198-627f8458d55f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/estrategia5/ContaServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/estrategia5/ContaTesteWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/estrategia5/ContaTesteWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/estrategia5/ContaTesteWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/estrategia5/ContaTesteWeb.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ContaTesteWeb #5">
+  <component name="RunManager" selected="JUnit.ContaServiceTest">
     <configuration name="GeradorMassas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="estrategia3.GeradorMassas" />
       <module name="cursoMassa" />
@@ -86,23 +85,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContaServiceTest #2" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="cursoMassa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="estrategia2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="estrategia2" />
-      <option name="MAIN_CLASS_NAME" value="estrategia2.ContaServiceTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,6 +123,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ContaServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cursoMassa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="estrategia5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="estrategia5" />
+      <option name="MAIN_CLASS_NAME" value="estrategia5.ContaServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContaTesteWeb #5" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="cursoMassa" />
       <extension name="coverage">
@@ -160,18 +157,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.GeradorMassas" />
-      <item itemvalue="JUnit.ContaServiceTest #2" />
       <item itemvalue="JUnit.ContaServiceTest #3" />
       <item itemvalue="JUnit.ContaServiceTest #4" />
       <item itemvalue="JUnit.ContaTesteWeb #5" />
+      <item itemvalue="JUnit.ContaServiceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContaServiceTest" />
         <item itemvalue="JUnit.ContaTesteWeb #5" />
         <item itemvalue="JUnit.ContaServiceTest #3" />
         <item itemvalue="Application.GeradorMassas" />
         <item itemvalue="JUnit.ContaServiceTest #4" />
-        <item itemvalue="JUnit.ContaServiceTest #2" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +190,7 @@
       <workItem from="1564573246295" duration="3097000" />
       <workItem from="1564584424376" duration="23000" />
       <workItem from="1565558972633" duration="14125000" />
-      <workItem from="1565782435047" duration="1920000" />
+      <workItem from="1565782435047" duration="2669000" />
     </task>
     <servers />
   </component>
