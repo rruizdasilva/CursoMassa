@@ -1,21 +1,42 @@
 package dbunit;
 
 import br.ce.wcaquino.dao.utils.ConnectionFactory;
+import org.apache.log4j.BasicConfigurator;
 import org.dbunit.DatabaseUnitException;
 import org.dbunit.database.DatabaseConnection;
+import org.dbunit.database.DatabaseSequenceFilter;
+import org.dbunit.dataset.FilteredDataSet;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.xml.FlatXmlDataSet;
+import org.dbunit.dataset.xml.FlatXmlDataSetBuilder;
+import org.dbunit.operation.DatabaseOperation;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.sql.SQLException;
 
 public class ImportExport {
-    public static void main(String[] args) throws SQLException, ClassNotFoundException, DatabaseUnitException, IOException {
+    public static void main(String[] args) throws Exception {
+        BasicConfigurator.configure();
+        exportarBanco();
+        importarBanco("saida.xml");
+        return;
+    }
+
+
+    public static void importarBanco(String massa) throws DatabaseUnitException, SQLException, ClassNotFoundException, FileNotFoundException {
+        DatabaseConnection dbConn = new DatabaseConnection((ConnectionFactory.getConnection()));
+        FlatXmlDataSetBuilder builder = new FlatXmlDataSetBuilder();
+        FlatXmlDataSet dataSet = builder.build(new FileInputStream("massas" + File.separator + massa));
+        DatabaseOperation.CLEAN_INSERT.execute(dbConn, dataSet);
+    }
+
+    public static void exportarBanco() throws Exception {
         DatabaseConnection dbConn = new DatabaseConnection((ConnectionFactory.getConnection()));
         IDataSet dataSet = dbConn.createDataSet();
-        FileOutputStream fos = new FileOutputStream(("massas" + File.separator + "saida.xml"));
-        FlatXmlDataSet.write(dataSet, fos);
+        DatabaseSequenceFilter databaseSequenceFilter = new DatabaseSequenceFilter(dbConn);
+        FilteredDataSet filteredDataSet = new FilteredDataSet(databaseSequenceFilter, dataSet);
+        FileOutputStream fos = new FileOutputStream(("massas" + File.separator + "saidaFiltrada.xml"));
+        //FlatXmlDataSet.write(dataSet, fos);
+        FlatXmlDataSet.write(filteredDataSet, fos);
     }
 }
