@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb419be5-6d5c-4126-b198-627f8458d55f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/massas/entrada.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/massas/entradaFiltrada.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/massas/est4_inserirConta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/massas/est4_umaConta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/massas/est5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/estrategia4/ContaServiceTestDBUnit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/estrategia5/ContaServiceTestDBUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cursoMassa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cursoMassa.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/massas/saida.xml" beforeDir="false" afterPath="$PROJECT_DIR$/massas/saida.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dbunit/ImportExport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dbunit/ImportExport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dbunit/ImportExport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dbunit/ImportExport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/estrategia4/ContaServiceTestDBUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/estrategia4/ContaServiceTestDBUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/estrategia4/ContaServiceTestDBUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/estrategia4/ContaServiceTestDBUnit.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ContaServiceTestDBUnit (1)">
+  <component name="RunManager" selected="JUnit.ContaServiceTestDBUnit.testInserir_Filter">
     <configuration name="ImportExport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dbunit.ImportExport" />
       <module name="cursoMassa" />
@@ -102,21 +89,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContaServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cursoMassa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="estrategia5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="estrategia5" />
-      <option name="MAIN_CLASS_NAME" value="estrategia5.ContaServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,37 +123,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaTesteWeb #5" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration name="ContaServiceTestDBUnit.testInserir_Assertion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cursoMassa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="estrategia5.*" />
+          <option name="PATTERN" value="estrategia4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="estrategia5" />
-      <option name="MAIN_CLASS_NAME" value="estrategia5.ContaTesteWeb" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
+      <option name="PACKAGE_NAME" value="estrategia4" />
+      <option name="MAIN_CLASS_NAME" value="estrategia4.ContaServiceTestDBUnit" />
+      <option name="METHOD_NAME" value="testInserir_Assertion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaServiceTestDBUnit.testInserir_Filter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cursoMassa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="estrategia4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="estrategia4" />
+      <option name="MAIN_CLASS_NAME" value="estrategia4.ContaServiceTestDBUnit" />
+      <option name="METHOD_NAME" value="testInserir_Filter" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.ImportExport" />
-      <item itemvalue="JUnit.ContaTesteWeb #5" />
-      <item itemvalue="JUnit.ContaServiceTest" />
       <item itemvalue="JUnit.ContaServiceTestDBUnit" />
       <item itemvalue="JUnit.ContaServiceTestDBUnit (1)" />
+      <item itemvalue="JUnit.ContaServiceTestDBUnit.testInserir_Assertion" />
+      <item itemvalue="JUnit.ContaServiceTestDBUnit.testInserir_Filter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContaServiceTestDBUnit.testInserir_Filter" />
+        <item itemvalue="JUnit.ContaServiceTestDBUnit.testInserir_Assertion" />
         <item itemvalue="JUnit.ContaServiceTestDBUnit (1)" />
         <item itemvalue="JUnit.ContaServiceTestDBUnit" />
         <item itemvalue="Application.ImportExport" />
-        <item itemvalue="JUnit.ContaServiceTest" />
-        <item itemvalue="JUnit.ContaTesteWeb #5" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +191,8 @@
       <workItem from="1564584424376" duration="23000" />
       <workItem from="1565558972633" duration="14125000" />
       <workItem from="1565782435047" duration="4040000" />
-      <workItem from="1565869786083" duration="4726000" />
+      <workItem from="1565869786083" duration="5003000" />
+      <workItem from="1566212828878" duration="3380000" />
     </task>
     <servers />
   </component>
