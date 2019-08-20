@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eb419be5-6d5c-4126-b198-627f8458d55f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/dao/impl/SaldoDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/dao/impl/SaldoDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dbunit/ImportExport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dbunit/ImportExport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dbunit/ImportExport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dbunit/ImportExport.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +58,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="estrategia5" />
       <recent name="estrategia4" />
+      <recent name="estrategia5" />
       <recent name="estrategia3" />
       <recent name="estrategia2" />
     </key>
@@ -78,7 +79,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CalculoSaldoTest.deveCalcularSaldoCorreto">
+  <component name="RunManager" selected="JUnit.CalculoSaldoTest - Estratégia 2">
+    <configuration name="ImportExport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dbunit.ImportExport" />
+      <module name="cursoMassa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dbunit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MontarAmbiente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.dao.utils.MontarAmbiente" />
       <module name="cursoMassa" />
@@ -92,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculoSaldoTest.deveCalcularSaldoCorreto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculoSaldoTest - Estratégia 2" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="cursoMassa" />
       <extension name="coverage">
         <pattern>
@@ -104,26 +118,12 @@
       <option name="MAIN_CLASS_NAME" value="estrategia2.CalculoSaldoTest" />
       <option name="METHOD_NAME" value="deveCalcularSaldoCorreto" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaServiceTestDBUnit (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cursoMassa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="estrategia5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="estrategia5" />
-      <option name="MAIN_CLASS_NAME" value="estrategia5.ContaServiceTestDBUnit" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContaServiceTestDBUnit.testInserir_Assertion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculoSaldoTest - Estratégia 4" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="cursoMassa" />
       <extension name="coverage">
         <pattern>
@@ -132,9 +132,10 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="estrategia4" />
-      <option name="MAIN_CLASS_NAME" value="estrategia4.ContaServiceTestDBUnit" />
-      <option name="METHOD_NAME" value="testInserir_Assertion" />
+      <option name="MAIN_CLASS_NAME" value="estrategia4.CalculoSaldoTest" />
+      <option name="METHOD_NAME" value="deveCalcularSaldoCorreto" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,19 +157,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ContaServiceTestDBUnit (1)" />
-      <item itemvalue="JUnit.ContaServiceTestDBUnit.testInserir_Assertion" />
-      <item itemvalue="JUnit.ContaServiceTestDBUnit.testInserir_Filter" />
-      <item itemvalue="JUnit.CalculoSaldoTest.deveCalcularSaldoCorreto" />
       <item itemvalue="Application.MontarAmbiente" />
+      <item itemvalue="Application.ImportExport" />
+      <item itemvalue="JUnit.ContaServiceTestDBUnit.testInserir_Filter" />
+      <item itemvalue="JUnit.CalculoSaldoTest - Estratégia 2" />
+      <item itemvalue="JUnit.CalculoSaldoTest - Estratégia 4" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CalculoSaldoTest.deveCalcularSaldoCorreto" />
+        <item itemvalue="JUnit.CalculoSaldoTest - Estratégia 4" />
+        <item itemvalue="Application.ImportExport" />
+        <item itemvalue="JUnit.CalculoSaldoTest - Estratégia 2" />
         <item itemvalue="Application.MontarAmbiente" />
         <item itemvalue="JUnit.ContaServiceTestDBUnit.testInserir_Filter" />
-        <item itemvalue="JUnit.ContaServiceTestDBUnit.testInserir_Assertion" />
-        <item itemvalue="JUnit.ContaServiceTestDBUnit (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +194,7 @@
       <workItem from="1565782435047" duration="4040000" />
       <workItem from="1565869786083" duration="5003000" />
       <workItem from="1566212828878" duration="4054000" />
-      <workItem from="1566219136203" duration="3832000" />
+      <workItem from="1566219136203" duration="4801000" />
     </task>
     <servers />
   </component>

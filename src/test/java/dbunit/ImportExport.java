@@ -17,8 +17,8 @@ import java.sql.SQLException;
 public class ImportExport {
     public static void main(String[] args) throws Exception {
         BasicConfigurator.configure();
-        exportarBanco();
-        importarBanco("saida.xml");
+        exportarBanco("saldo.xml");
+//        importarBanco("saida.xml");
         return;
     }
 
@@ -30,12 +30,12 @@ public class ImportExport {
         DatabaseOperation.CLEAN_INSERT.execute(dbConn, dataSet);
     }
 
-    public static void exportarBanco() throws Exception {
+    public static void exportarBanco(String massa) throws Exception {
         DatabaseConnection dbConn = new DatabaseConnection((ConnectionFactory.getConnection()));
         IDataSet dataSet = dbConn.createDataSet();
         DatabaseSequenceFilter databaseSequenceFilter = new DatabaseSequenceFilter(dbConn);
         FilteredDataSet filteredDataSet = new FilteredDataSet(databaseSequenceFilter, dataSet);
-        FileOutputStream fos = new FileOutputStream(("massas" + File.separator + "saidaFiltrada.xml"));
+        FileOutputStream fos = new FileOutputStream(("massas" + File.separator + massa));
         //FlatXmlDataSet.write(dataSet, fos);
         FlatXmlDataSet.write(filteredDataSet, fos);
     }
