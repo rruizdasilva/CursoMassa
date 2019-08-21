@@ -9,6 +9,7 @@ import br.ce.wcaquino.entidades.Usuario;
 import br.ce.wcaquino.service.ContaService;
 import br.ce.wcaquino.service.TransacaoService;
 import br.ce.wcaquino.service.UsuarioService;
+import br.ce.wcaquino.utils.DataUtils;
 import estrategia1.UsuarioServicoTest;
 import org.junit.Assert;
 import org.junit.Test;
@@ -66,11 +67,11 @@ public class CalculoSaldoTest {
 
         // Transacao passada / Saldo = 34
         transacaoService.salvar(new Transacao("Transacao passada", "Envolvido", TipoTransacao.RECEITA,
-                obterDataComDiferencaDias(-1), 32d, true, conta, usuario));
+                DataUtils.obterDataComDiferencaDias(-1), 32d, true, conta, usuario));
 
         // Transacao futura / Saldo = 34
         transacaoService.salvar(new Transacao("Transacao futura", "Envolvido", TipoTransacao.RECEITA,
-                obterDataComDiferencaDias(1), 64d, true, conta, usuario));
+                DataUtils.obterDataComDiferencaDias(1), 64d, true, conta, usuario));
 
         // Transacao despesa / Saldo = -94
         transacaoService.salvar(new Transacao("Transacao despesa", "Envolvido", TipoTransacao.DESPESA,
@@ -84,11 +85,5 @@ public class CalculoSaldoTest {
         Assert.assertEquals(new Double(162d), saldoDAO.getSaldoConta(conta.getId()));
         Assert.assertEquals(new Double(8d), saldoDAO.getSaldoConta(contaSecundaria.getId()));
         Assert.assertEquals(new Double(4d), saldoDAO.getSaldoConta(contaUsuarioAlternativo.getId()));
-    }
-
-    public Date obterDataComDiferencaDias(int dias){
-        Calendar cal = Calendar.getInstance();
-        cal.add(Calendar.DAY_OF_MONTH, dias);
-        return cal.getTime();
     }
 }
