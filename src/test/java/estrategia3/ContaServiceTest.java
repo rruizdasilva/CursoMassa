@@ -20,7 +20,7 @@ public class ContaServiceTest {
         usuario = userService.salvar(usuario);
         Conta conta = new Conta(faker.superhero().name(), usuario);
         Conta contaSalva = service.salvar(conta);
-        Assert.assertNotNull(contaSalva.getId());
+        Assert.assertNotNull(contaSalva.getId(), "Não há conta inserida");
         userService.printAll();
         service.printAll();
     }
@@ -31,7 +31,7 @@ public class ContaServiceTest {
         String novoNome = faker.ancient().god() + " " + faker.ancient().titan();
         contaTeste.setNome(novoNome);
         Conta contaAlterada = service.salvar(contaTeste);
-        Assert.assertEquals(novoNome, contaAlterada.getNome());
+        Assert.assertEquals(novoNome, contaAlterada.getNome(), "A conta não foi editada");
         service.printAll();
     }
 
@@ -40,7 +40,7 @@ public class ContaServiceTest {
         String nomeConta = new MassaDAOImpl().obterMassa(GeradorMassas.CHAVE_CONTA);
         Conta contaTeste = service.findByName(nomeConta);
         Conta contaBuscada = service.findById(contaTeste.getId());
-        Assert.assertEquals(contaTeste.getNome(), contaBuscada.getNome());
+        Assert.assertEquals(contaTeste.getNome(), contaBuscada.getNome(), "Conta não encontrada");
     }
 
     @Test
